@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background"
+                android:orientation="vertical" >
+    <RelativeLayout
+            android:id="@+id/loginheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF8500"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+        <TextView
+
+                android:id="@+id/customerLoginTop"
+                android:layout_width="fill_parent"
+                android:layout_height="55dip"
+                android:background="#FF8500"
+                android:text="登录"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:enabled="false"
+                />
+
+        <Button
+                android:id="@+id/retButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/retbutton"
+                android:background="@android:color/transparent"
+                />
+    </RelativeLayout>
+    <EditText
+            android:text=""
+            android:background="#FFFFFF"
+            android:id="@+id/customerLoginName"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/loginheader"
+            android:layout_marginTop="40dip"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginBottom="1dip"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:hint="@string/hintlogin"
+            />
+    <EditText
+            android:text=""
+            android:background="#FFFFFF"
+            android:id="@+id/customerLoginPasswd"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/customerLoginName"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:password="true"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="@string/hintloginpasswd"
+            />
+
+    <Button
+            android:id="@+id/customerLoginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customerLoginPasswd"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="35dip"
+            android:layout_marginRight="35dip"
+            android:layout_marginBottom="25dip"
+            android:text="登录"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:padding="5dip"
+            android:background="#FF8500"
+            />
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/customerLoginButton">
+        <Button
+            android:id="@+id/customerRegButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有账号？请点击注册"
+            android:textStyle="italic"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="#3993CF"
+            android:background="@android:color/transparent"
+            
+            />
+    <View 
+        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#3993CF"/>
+    </LinearLayout>
+    
+</RelativeLayout>

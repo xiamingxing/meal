@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="popmenu_width">140.0dip</dimen>
+    <dimen name="popmenu_yoff">5.0dip</dimen>
+    <dimen name="dip2pix">1.0dip</dimen>
+</resources>
